@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" action="#" method="get">
+
+            <h1>⚡FORMULARIO NEON⚡</h1>
+            <p>🎮 Completa tu perfil para entrar en el modo arcade 🎮</p>
+
+            <div>
+                <label for="usuario">🕹️ Nombre de jugador</label>
+                <input type="text" name="Usuario" id="usuario" placeholder="Escribe tu nickname">
+            </div>
+
+            <div>
+                <label for="contrasena">🔐 Codigo secreto</label>
+                <input type="password" name="Contrasena" id="contrasena" placeholder="*****">
+            </div>
+
+            <div class="dificultad">
+                <h4>Elige la dificultad</h4>
+                <div>
+                    <div>
+                        <input type="radio" name="dificultad" id="facil" value="1">
+                        <label for="facil">🟢 Facil</label>
+                    </div>    
+
+                    <div>
+                        <input type="radio" name="dificultad" id="medio" value="2">
+                        <label for="medio">🟡 Medio</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <div>
+                        <input type="radio" name="dificultad" id="dificil" value="3">
+                        <label for="dificil">🔴 Dificil</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="dificultad" id="extremo" value="4">
+                        <label for="extremo">☠️ Extremo</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="habilidades">
+                <h4>Mis habilidades:</h4>
+                <div>
+                    <div>
+                        <input type="checkbox" name="Programacion" id="programacion" value="p">
+                        <label for="programacion">⛹️ Programacion</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="Musica" id="musica" value="m">
+                        <label for="musica">🎶 Musica</label>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div>
+                        <input type="checkbox" name="Gaming" id="gaming" value="g">
+                        <label for="gaming">🎮 Gaming</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="Deporte" id="deporte" value="d">
+                        <label for="deporte">⛹️ Deporte</label>
+                    </div>                
+                </div>
+
+            </div>
+
+            <div>
+                <label for="avatar">📁 Subir tu Avatar</label>
+                <input type="file" name="Avatar" id="avatar" accept=".png" multiple>
+            </div>
+
+
+            <h4>🚀 ¿DESPEGAMOS?</h4>
+
+            <div class="img">
+                <input type="image" src="img/satheeshsankaran-rocket-158.gif" alt="Cohete despegando" title="Pulsame para despegar">
+            </div>
+
+            <div class="boton">
+                <input type="submit" value="🚀 ENVIAR">
+                <input type="reset" value="🗑️ LIMPIAR">
+                <input type="button" value="🎁 PREMIO">
+            </div>
+
+
+            
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
