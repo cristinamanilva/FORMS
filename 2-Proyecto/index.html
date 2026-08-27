@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" action="#" method="get">
+
+            <h1>Crear cuenta 😜</h1>
+            <p>Rellena tus datos para regristrarte</p>
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="Nombre" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+            <div>
+                <label for="apellidos">Apellidos </label>
+                <input type="text" name="Apellidos" id="apellidos" placeholder="Escribe tu apellido">
+            </div>
+
+
+            <div>
+                <label for="nombreUsuario">Nombre de Usuario:</label>
+                <input type="text" name="NombreUsuario" id="nombreUsuario" placeholder="Elige un nombre de usuario">
+            </div>
+
+            <div>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" name="Contrasena" id="contrasena" placeholder="Introduzca una contraseña">
+            </div>
+
+            <div class="estudios">
+                <h4>Nivel de Estudios:</h4>
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="eso" value="e">
+                    <label for="eso">ESO</label>
+                </div>
+
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="bachillerato" value="b">
+                    <label for="bachillerato">Bachillerato</label>
+                </div>
+
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="fp" value="f">
+                    <label for="fp">FP</label>
+                </div>
+
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="universidad" value="u">
+                    <label for="universidad">Universidad</label>
+                </div>
+
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="master" value="m">
+                    <label for="master">Máster</label>
+                </div>
+
+                <div class="seleccionar">
+                    <input type="radio" name="estudios" id="doctorado" value="d">
+                    <label for="doctorado">Doctorado</label>
+                </div>
+
+            </div>
+
+            <div class="aficiones">
+                <h4>Mis Aficiones:</h4>
+                <div>
+                    <input type="checkbox" name="Aficiones" id="deporte" value="d">
+                    <label for="deporte">⛹️ Deporte</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Aficiones" id="musica" value="m">
+                    <label for="musica">🎶 Musica</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Aficiones" id="videojuegos" value="vg">
+                    <label for="videojuegos">🎮 Videojuegos</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Aficiones" id="viajar" value="v">
+                    <label for="viajar">🛫 Viajar</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Aficiones" id="cine" value="c">
+                    <label for="cine">🎥 Cine</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="Aficiones" id="lectura" value="l">
+                    <label for="lectura">📖 Lectura</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="anexos">Subir Archivos</label>
+                <input type="file" name="Archivos" id="anexos" accept=".pdf" multiple>
+            </div>
+
+            <div>
+                <input type="submit" value="Registrarme 📋">
+            </div>
+
+
+            <div>
+
+                <input type="image" src="img/giphy.webp" alt="HOLA" title="Pulsame para recibir un saludo"
+                    onclick="alert('HOLA!!!')">
+            </div>
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
