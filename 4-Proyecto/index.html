@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" action="#" method="get">
+
+            <h1>📋 Formulario Clásico</h1>
+
+            <section class="personales">
+
+                <div>
+                    <label for="usuario">Nombre de perfl</label>
+                    <input type="text" name="Usuario" id="usuario" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" name="Contrasena" id="contrasena" placeholder="*****" required>
+                </div>
+
+                <div>
+                    <label for="avatar">📁 Subir archivo:</label>
+                    <input type="file" name="Avatar" id="avatar" accept=".png, .pdf" multiple>
+                </div>
+
+            </section>
+
+            <section class="preferencias">
+                <div class="sexo">
+                    <h4>Sexo</h4>
+                    <div class="opciones">
+                        <div>
+                            <input type="radio" name="sexo" id="hombre" value="h">
+                            <label for="hombre">Hombre</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="sexo" id="mujer" value="m">
+                            <label for="mujer">Mujer</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="sexo" id="otro" value="o">
+                            <label for="otro">Otro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intereses">
+                    <h4>Intereses:</h4>
+                    <div class="opciones">
+                        <div>
+                            <input type="checkbox" name="Lectura" id="lectura" value="l">
+                            <label for="lectura">Lectura</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="Musica" id="musica" value="m">
+                            <label for="musica">Musica</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="Cine" id="cine" value="c">
+                            <label for="cine">Cine</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="Deporte" id="deporte" value="d">
+                            <label for="deporte">Deporte</label>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="extra">
+                <div>
+                    <label for="pais">Pais</label>
+                    <select name="Pais" id="pais">
+                        <option value="selecciona"> --Selecciona un país--</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="granada">Granada</option>
+                        <optgroup label="Europa">
+                            <option value="alemania">Alemania</option>
+                            <option value="francia">Francia</option>
+                            <option value="portugal">Portugal</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="Comentarios" id="comentarios" cols="64" rows="8"
+                        placeholder="Escribe aquí tus comentarios"></textarea>
+                </div>
+
+            </section>
+
+            <div class="boton">
+                <input type="submit" value="🚀 ENVIAR">
+                <input type="reset" value="🗑️ LIMPIAR">
+                <input type="button" value="🎁 PREMIO" onclick="alert('HAS GANADO UN IPHONE 20!!!')">
+                <input type="button" value="🎁 APOSTAMOS?" onclick="alert('oOOOOoooOOO perdiste parguela')">
+            </div>
+
+            <div class="img">
+                <input type="image" src="img/giphy.webp" alt="hola!" title="Hola!!">
+            </div>
+
+
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
