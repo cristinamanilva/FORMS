@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  color:rgb(70, 70, 200); ;
+}
+
+p {
+  margin: 0;
+  font-weight: 400px;
+  width: 500px;
+}
+
+main {
+  padding: 60px 0px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 500px;
+  padding: 0 50px 50px 50px;
+
+  border-radius: 25px;
+  border: 0px solid white;
+
+  background-color: azure;
+}
+
+.formulario > section > header{
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(70, 70, 200);
+  color: white;
+  padding: 30px 46px;
+  border-radius: 25px 25px 0 0;
+}
+
+.formulario > section > header > h1{
+  color: white;
+}
+
+.formulario > section > header > p {
+  margin: 5px;
+}
+
+.campo, .numeros, .fechas, .seleccionar, .otros {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.campo > div > label{
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 500px;
+  width: 500px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+select,
+input[type="color"]{
+  width: 500px;
+  height: 35px;
+  background-color: aliceblue;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  margin: 5px 0 20px 0px;
+
+}
+
+.rango > span{
+  display: block;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+.seleccionar > div >select{
+  margin: 5px 0 8px 0;
+}
+
+.seleccionar > div >p{
+  margin: 10px 0 8px 0;
+}
+
+input[type="file"]{
+  width: 500px;
+  padding: 10px 8px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  margin: 5px 0 10px 0;
+}
+
+textarea{
+  margin: 5px 0 10px 0;
+  background-color: aliceblue;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 255px;
+  padding: 12px 24px;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+}
+
+input[type="submit"] {
+  background: linear-gradient(
+    to bottom right,
+    rgb(26, 84, 192),
+    rgb(106, 9, 176)
+  ) !important;
+}
+
+.seleccionar > input {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+#sms {
+  margin-left: 63px;
+}

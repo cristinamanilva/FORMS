@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" action="#" method="get" enctype="multipart/form-data">
+            <section>
+                <header>
+                    <h1>Formulario Completo</h1>
+                    <p>Todos los tipos de campos HTML</p>
+                </header>
+            </section>
+
+            <section class="campo">
+                <h3>Campos de texto</h3>
+                <hr>
+
+                <div>
+                    <label for="nombreUsuario">Nombre de Usuario:</label>
+                    <input type="text" name="NombreUsuario" id="nombreUsuario" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" name="Contrasena" id="contrasena" placeholder="******" required>
+                </div>
+
+                <!-- EMAIL -->
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="Email" id="email" placeholder="ejemplo@correo.com">
+                </div>
+
+                <!-- TELÉFONO -->
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="Telefono" id="telefono" placeholder="+34 600 123 456">
+                </div>
+
+                <!-- URL -->
+                <div>
+                    <label for="web">Página web:</label>
+                    <input type="url" name="Web" id="web" placeholder="https://www.ejemplo.com">
+                </div>
+
+                <!-- BUSCADOR -->
+                <div>
+                    <label for="busqueda">Buscar:</label>
+                    <input type="search" name="Busqueda" id="busqueda" placeholder="Buscar...">
+                </div>
+
+            </section>
+
+            <section class="numeros">
+                <h3>Números y rangos</h3>
+                <hr>
+
+                <!-- NUMERO -->
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="Edad" id="edad" min="18" max="100" step="1" value="18">
+                </div>
+
+                <!-- RANGO -->
+                <div class="rango">
+                    <label for="experiencia">Años de experiencia:</label>
+                    <input type="range" name="Experiencia" id="experiencia" min="0" max="100" step="1" value="50">
+                    <span id="valorExperiencia">50</span>
+                </div>
+            </section>
+            
+            <section class="fechas">
+                <h3>Fechas y horas  </h3>
+                <hr>
+
+                <!-- FECHA -->
+                <div>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="Fecha" id="fecha" min="2026-01-01" max="2026-12-31" step="1">
+                </div>
+
+                <!-- HORA -->
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input type="time" name="Hora" id="hora" min="08:00" max="22:00" step="900">
+                </div>
+
+                <!-- FECHA + HORA -->
+                <div>
+                    <label for="fechaHora">Fecha y hora:</label>
+                    <input type="datetime-local" name="FechaHora" id="fechaHora" min="2026-01-01T08:00"
+                        max="2026-12-31T20:00" step="900">
+                </div>
+
+                <!-- MES -->
+                <div>
+                    <label for="mes">Mes:</label>
+                    <input type="month" name="Mes" id="mes" min="2026-01" max="2026-12" step="1">
+                </div>
+
+                <!-- SEMANA -->
+                <div>
+                    <label for="semana">Semana:</label>
+                    <input type="week" name="Semana" id="semana" min="2026-W01" max="2026-W52" step="1">
+                </div>
+
+            </section>
+                
+            <section class="seleccionar">
+                <h3>Seleccion  </h3>
+                <hr>
+                <!-- SELECT + OPTGROUP -->
+                <div>
+                    <label for="provincia">Provincia:</label>
+
+                    <select name="Provincia" id="provincia">
+                        <option value="elige">-- Elige un pais --</option>
+                        <optgroup label="España">
+                            <option value="Andalucia">Andalucia</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Galicia">Galicia</option>
+                            <option value="Valencia">Valencia</option>
+                        </optgroup>
+
+                        <optgroup label="Europa">
+                            <option value="Alemania">Alemania</option>
+                        </optgroup>
+
+                        <optgroup label="America">
+                            <option value="EEUU">EEUU</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <!-- CASILLA DE VERIFICACION -->
+                <div>
+                    <p>Que te gusta:</p>
+
+                    <div class="seleccion">
+                        <input type="checkbox" name="Deportes" id="deportes" value="d">
+                        <label for="deportes">Deportes</label>
+
+                        <input type="checkbox" name="Musica" id="musica" value="m">
+                        <label for="musica">Musica</label>
+
+                        <input type="checkbox" name="Cine" id="cine" value="c">
+                        <label for="cine">Cine</label>
+
+                        <input type="checkbox" name="Lectura" id="lecturas" value="l">
+                        <label for="lecturas">Lectura</label>
+                    </div>
+                </div>
+
+                <div> 
+                    <p>Sexo:</p>
+
+                    <input type="radio" name="Sexo" id="masculino" value="m">
+                    <label for="masculino">Masculino</label>
+ 
+                    <input type="radio" name="Sexo" id="femenino" value="f">
+                    <label for="femenino">Femenino</label>
+
+                    <input type="radio" name="Sexo" id="otros" value="o">
+                    <label for="otros">Otros</label>
+
+                    <input type="radio" name="Sexo" id="pnD" value="pnD">
+                    <label for="pnD">Prefiero no decir</label>
+                </div>
+
+            </section>
+
+            <section class="otros">
+                <h3>Otros campos  </h3>
+                <hr>
+                
+                <!-- COLOR -->
+                <div>
+                    <label for="color">Selecciona un color:</label>
+                    <input type="color" name="Color" id="color" value="#0000ff">
+                </div>
+
+                <!-- FILE -->
+                <div>
+                    <label for="archivo">Subir archivo:</label>
+                    <input type="file" name="Archivo" id="archivo">
+                </div>                
+
+                <!-- TEXTAREA -->
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea name="Comentarios" id="comentarios" rows="6" cols="68"
+                        placeholder="Escribe aquí tus comentarios..."></textarea>
+                </div>
+            </section>
+
+            <!-- BOTONES -->
+            <div class="boton">
+                <input type="submit" value="ENVIAR FORMULARIO">
+                <input type="reset" value="REINICIAR">
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
