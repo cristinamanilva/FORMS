@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>PRIMER FORMULARIO</h1>
+    </header>
+
+    <main>
+
+        <div>
+            <form class="formulario" action="#" method="get" enctype="multipart/form-data">
+
+                <div>
+                    <label for="nombreUsuario">Nombre de Usuario:</label>
+                    <input type="text" name="NombreUsuario" id="nombreUsuario">
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" name="Contrasena" id="contrasena">
+                </div>
+
+                <!-- EMAIL -->
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="Email" id="email" placeholder="ejemplo@correo.com">
+                </div>
+
+                <!-- TELÉFONO -->
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="Telefono" id="telefono" placeholder="600123456">
+                </div>
+
+                <!-- URL -->
+                <div>
+                    <label for="web">Página web:</label>
+                    <input type="url" name="Web" id="web" placeholder="https://www.ejemplo.com">
+                </div>
+
+                <!-- SEXO -->
+                <div>
+                    <p>Sexo:</p>
+
+                    <div class="seleccionar">
+                        <input type="radio" name="Sexo" id="masculino" value="m">
+                        <label for="masculino">Masculino</label>
+                    </div>
+
+                    <div class="seleccionar">
+                        <input type="radio" name="Sexo" id="femenino" value="f">
+                        <label for="femenino">Femenino</label>
+                    </div>
+
+                    <div class="seleccionar">
+                        <input type="radio" name="Sexo" id="otros" value="o">
+                        <label for="otros">Otros</label>
+                    </div>
+                </div>
+
+                <!-- FORMA DE CONTACTO -->
+                <div>
+                    <p>Cómo quieres que contacte contigo:</p>
+
+                    <div class="seleccionar">
+                        <input type="checkbox" name="Contacto" id="whatsapp" value="w">
+                        <label for="whatsapp">Whatsapp</label>
+
+                        <input type="checkbox" name="Contacto" id="correo" value="c">
+                        <label for="correo">Correo</label>
+                    </div>
+
+                    <div class="seleccionar">
+                        <input type="checkbox" name="Contacto" id="telefonoContacto" value="t">
+                        <label for="telefonoContacto">Teléfono</label>
+
+                        <input type="checkbox" name="Contacto" id="sms" value="s">
+                        <label for="sms">SMS</label>
+                    </div>
+                </div>
+
+                <!-- SELECT + OPTGROUP -->
+                <div>
+                    <label for="provincia">Provincia:</label>
+
+                    <select name="Provincia" id="provincia">
+
+                        <optgroup label="Andalucía">
+                            <option value="malaga">Málaga</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="sevilla">Sevilla</option>
+                            <option value="granada">Granada</option>
+                            <option value="cordoba">Córdoba</option>
+                        </optgroup>
+
+                        <optgroup label="Comunidad de Madrid">
+                            <option value="madrid">Madrid</option>
+                        </optgroup>
+
+                        <optgroup label="Cataluña">
+                            <option value="barcelona">Barcelona</option>
+                            <option value="tarragona">Tarragona</option>
+                            <option value="girona">Girona</option>
+                        </optgroup>
+
+                    </select>
+                </div>
+
+                <!-- NUMBER -->
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="Edad" id="edad" min="18" max="100" step="1" value="18">
+                </div>
+
+                <!-- RANGE -->
+                <div>
+                    <label for="experiencia">Años de experiencia:</label>
+                    <input type="range" name="Experiencia" id="experiencia" min="0" max="20" step="1" value="5">
+                </div>
+
+                <!-- DATE -->
+                <div>
+                    <label for="fecha">Fecha:</label>
+
+                    <input type="date" name="Fecha" id="fecha" min="2026-01-01" max="2026-12-31" step="1">
+                </div>
+
+                <!-- DATETIME-LOCAL -->
+                <div>
+                    <label for="fechaHora">Fecha y hora:</label>
+
+                    <input type="datetime-local" name="FechaHora" id="fechaHora" min="2026-01-01T08:00"
+                        max="2026-12-31T20:00" step="900">
+                </div>
+
+
+                <!-- MONTH -->
+                <div>
+                    <label for="mes">Mes:</label>
+
+                    <input type="month" name="Mes" id="mes" min="2026-01" max="2026-12" step="1">
+                </div>
+
+
+                <!-- WEEK -->
+                <div>
+                    <label for="semana">Semana:</label>
+
+                    <input type="week" name="Semana" id="semana" min="2026-W01" max="2026-W52" step="1">
+                </div>
+
+
+                <!-- TIME -->
+                <div>
+                    <label for="hora">Hora:</label>
+
+                    <input type="time" name="Hora" id="hora" min="08:00" max="22:00" step="900">
+                </div>
+
+                <!-- TEXTAREA -->
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+
+                    <textarea name="Comentarios" id="comentarios" rows="6" cols="40"
+                        placeholder="Escribe aquí tus comentarios..."></textarea>
+                </div>
+
+                <!-- FILE -->
+                <div>
+                    <label for="archivo">Subir archivo:</label>
+                    <input type="file" name="Archivo" id="archivo">
+                </div>
+
+                <!-- COLOR -->
+                <div>
+                    <label for="color">Selecciona un color:</label>
+
+                    <input
+                        type="color"
+                        name="Color"
+                        id="color"
+                        value="#0000ff">
+                </div>
+
+                <!-- BUSCADOR --> 
+
+                <div class="buscador">
+                    <label for="busqueda">Buscar:</label>
+
+                    <input
+                        type="search"
+                        name="Busqueda"
+                        id="busqueda"
+                        placeholder="Escribe lo que quieres buscar..."
+                        minlength="3"
+                        maxlength="50">
+
+                    <button type="submit">🔍 BUSCAR</button>
+                </div>
+
+                <!-- TÉRMINOS -->
+                <div class="check">
+                    <input type="checkbox" name="Terminos" id="terminos" value="sT">
+                    <label for="terminos">Aceptas los términos</label>
+                </div>
+
+                <!-- CONDICIONES -->
+                <div class="check">
+                    <input type="checkbox" name="Condiciones" id="condiciones" value="sC">
+                    <label for="condiciones">Aceptas las condiciones</label>
+                </div>
+
+                <!-- BOTONES -->
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="BORRAR">
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
