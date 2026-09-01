@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Formularios</title>
+</head>
+
+<body>
+    <main>
+        <form class="formulario" action="#" method="get">
+
+            <h1>📋 Expresiones Regulares</h1>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" 
+                    placeholder="Escribe tu nombre (Juan)" 
+                    pattern="([A-ZÁÉÍÓÚÑ]{1}[a-záéíóúñ]{1,})|(([A-ZÁÉÍÓÚÑ]{1}[a-záéíóúñ]{1,}\s)+[A-ZÁÉÍÓÚÑ]{1}[a-záéíóúñ]{1,})"
+                    >
+                </div>
+
+                 <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="Telefono" id="telefono" 
+                    placeholder="Escribe tu telefono (123 45 67 89)" 
+                    pattern="^\d{3}\s\d{2}\s\d{2}\s\d{2}$"
+                    >
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="text" name="Fecha" id="fecha" 
+                    placeholder="Escribe tu fecha (15/12/2026)" 
+                    pattern="^\d{1,2}/\d{1,2}/\d{4}$"
+                    >
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" 
+                    placeholder="Escribe tu email (usuario@dominio.com)" 
+                    pattern="^[a-zA-Z0-9\._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$"
+                    >
+                </div>    
+                
+            </fieldset>
+
+            <div class="boton">
+                <input type="submit" value="ENVIAR">
+            </div>
+
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
