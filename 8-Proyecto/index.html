@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Mi tienda online</title>
+</head>
+
+<body>
+    <header>
+        <h1>🛍️ Mi tienda online</h1>
+
+        <section>
+            <input form="f-registro" type="submit" value="🙆 Registrar Usuario">
+            <input form="f-compra" type="submit" value="🧺 Comprar Artículo">
+            <input form="f-devolucion" type="submit" value="⬅️ Devolver Artículo">
+        </section>
+
+    </header>
+
+    <main>
+        <form id="f-registro" action="#" method="get">
+            <section class="titulo">
+                <h2>🧑‍🦱Registro de nuevo usuario</h2>
+                <p>Completa tus datos para crear una nueva cuenta</p>
+            </section>
+
+            <section class="campo">
+                <article>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                </article>
+
+                <article>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="Apellidos" id="apellidos" placeholder="Escribe tus apellidos" required>
+                </article>
+
+                <article>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="Ciudad" id="ciudad" placeholder="Escribe tu ciudad" required>
+                </article>
+
+                <article>
+                    <label for="provincia">Provincia:</label>
+
+                    <select name="Provincia" id="provincia">
+                        <option value="elige">-- Elige un pais --</option>
+                        <optgroup label="Andalucia">
+                            <option value="Malaga">Málaga</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Jaen">Jaén</option>
+                            <option value="Almeria">Almería</option>
+                        </optgroup>
+                    </select>
+                </article>
+
+                <article class="fondoGris">
+                    <label for="tipoUsuario">Tipo de usuario:</label>
+                    <div>
+                        <input type="radio" name="tipoUsuario" id="Particular" value="particular">
+                        <label for="Particular">Particular</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="tipoUsuario" id="Empresarial" value="empresarial">
+                        <label for="Empresarial">Empresarial</label>
+                    </div>
+
+                </article>
+
+                <article class="fondoGris">
+                    <p>Preferencias:</p>
+                    <div>
+                        <input type="checkbox" name="ofertas" id="ofertas" value="ofertas">
+                        <label for="ofertas">Quiero recibir ofertas</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="novedades" id="novedades" value="novedades">
+                        <label for="novedades">Quiero recibir novedades</label>
+                    </div>
+
+                </article>
+
+                <article class="reiniciar">
+                    <input type="reset" value="Borrar datos">
+                </article>
+
+            </section>
+        </form>
+
+        <form id="f-compra" action="#" method="get">
+            <section>
+                <h2>🛒 Compra de un artículo</h2>
+                <p>Selecciona las caracterustucas del producto</p>
+            </section>
+
+
+            <section class="campo">
+                <article>
+                    <label for="articulo">Articulo:</label>
+                    <input type="text" name="Articulo" id="articulo" placeholder="Nombre del artículo">
+                </article>
+
+                <article>
+                    <label for="Categoria">Categoria:</label>
+
+                    <select name="Categoria" id="Categoria">
+                        <option value="elige">-- Seleccione una categoria --</option>
+                        <optgroup label="Música">
+                            <option value="guitarra">Guitarra</option>
+                            <option value="piano">Piano</option>
+                            <option value="bateria">Batería</option>
+                            <option value="saxofón">Saxofón</option>
+                            <option value="violín">Violín</option>
+                            <option value="flauta">Flauta</option>
+                            <option value="clarinete">Clarinet</option>
+                        </optgroup>
+                        <optgroup label="Deporte">
+                            <option value="pelotas">Pelotas</option>
+                            <option value="camisetas">Camisetas</option>
+                        </optgroup>
+                    </select>
+                </article>
+
+                <article>
+                    <label for="Cantidad">Cantidad:</label>
+
+                    <select name="Cantidad" id="Cantidad">
+                        <option value="1u">1 unidad</option>
+                        <option value="2u">2 unidades</option>
+                        <option value="3u">3 unidades</option>
+                        <option value="4u">4 unidades</option>
+                        <option value="5u">5 unidades</option>
+                    </select>
+                </article>
+
+                <article class="fondoGris">
+                    <label for="formaEnvio">Forma de envio:</label>
+                    <div>
+                        <input type="radio" name="formaEnvio" id="estandar" value="estandar">
+                        <label for="estandar">Envio estandar</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="formaEnvio" id="express" value="express">
+                        <label for="express">Envio express</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="formaEnvio" id="Recogida" value="recogida">
+                        <label for="Recogida">Recogida en tienda</label>
+                    </div>
+
+                </article>
+
+                <article class="fondoGris">
+                    <p>Servicios adiccionales:</p>
+                    <div>
+                        <input type="checkbox" name="regalo" id="regalo" value="regalo">
+                        <label for="regalo">Envolver como regalo</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="factura" id="factura" value="factura">
+                        <label for="factura">Solicitar factura</label>
+                    </div>
+                </article>
+
+                <article>
+                    <label for="dirEntrega">Dirección de entrega:</label>
+                    <input type="text" name="dirEntrega" id="dirEntrega" placeholder="Calle y Número">
+                </article>
+
+
+                <article class="reiniciar">
+                    <input type="reset" value="Borrar datos">
+                </article>
+
+            </section>
+        </form>
+
+        <form id="f-devolucion" action="#" method="get">
+            <section>
+                <h2>⬅️ Devolución de un artículo</h2>
+                <p>Indica los datos y motivos de la devolucion</p>
+            </section>
+
+            <section class="campo">
+                <article>
+                    <label for="nPedido">Numero de pedido:</label>
+                    <input type="text" name="nPedido" id="nPedido" placeholder="PED-2026-001"
+                        pattern="PED-20[0-9]{2}-[0-9]{3}" required>
+                </article>
+
+                <article>
+                    <label for="nombreProducto">Nombre del producto:</label>
+                    <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Nombre del producto" required>
+                </article>
+
+                <article>
+                    <label for="motivo">Motivo de la devolución:</label>
+
+                    <select name="motivo" id="motivo">
+                        <option value="elige">-- Seleccione un motivo --</option>
+                        <option value="defectuoso">Producto defectuoso</option>
+                        <option value="equivocado">Producto equivocado</option>
+                        <option value="noNecesita">Ya no lo necesito</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </article>
+
+                <article class="fondoGris">
+                    <label for="estadoProducto">Estado del producto:</label>
+                    <div>
+                        <input type="radio" name="estadoProducto" id="precintado" value="precintado">
+                        <label for="precintado">Sin abrir/Precintado</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="estadoProducto" id="abiertoNoUsado" value="abiertoNoUsado">
+                        <label for="abiertoNoUsado">Abierto pero sin usar</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="estadoProducto" id="usado" value="usado">
+                        <label for="usado">Producto Usado</label>
+                    </div>
+
+                </article>
+
+                <article class="fondoGris">
+                    <p>Elementos incluidos:</p>
+                    <div>
+                        <input type="checkbox" name="embalajeOriginal" id="embalajeOriginal" value="embalajeOriginal">
+                        <label for="embalajeOriginal">Conserva el embalaje original</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="todosAccesorios" id="todosAccesorios" value="todosAccesorios">
+                        <label for="todosAccesorios">Incluye todos los accesorios</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="manualIntrucciones" id="manualIntrucciones" value="manualIntrucciones">
+                        <label for="manualIntrucciones">Incluye manual de instrucciones</label>
+                    </div>
+                </article>
+
+                <article>
+                    <label for="observaciones">Observaciones:</label>
+                    <input type="text" name="observaciones" id="observaciones" placeholder="Escribe tus observaciones">
+                </article>
+
+                <article class="reiniciar">
+                    <input type="reset" value="Borrar datos">
+                </article>
+
+            </section>
+        </form>
+
+
+
+
+    </main>
+
+</body>
+
+</html>

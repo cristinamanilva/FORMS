@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  color: rgb(70, 70, 200);
+}
+
+p {
+  margin: 0;
+  font-weight: 400px;
+  width: 500px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 0 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.802);
+  z-index: 1000;
+
+  h1 {
+    padding: 20px 0px;
+  }
+
+  input[type="submit"] {
+    padding: 12px 32px;
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+    border: 0px;
+    transition: 0.3s;
+  }
+
+  input[type="submit"]:first-child {
+    background-color: rgb(70, 70, 200);
+  }
+
+  input[type="submit"]:nth-child(2) {
+    background-color: rgb(25, 140, 24);
+  }
+
+  input[type="submit"]:last-child {
+    background-color: rgb(222, 134, 10);
+  }
+
+  input[type="submit"]:hover {
+    transform: translateY(-2px);
+    border: 0px;
+  }
+}
+
+main {
+  padding: 60px 0px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 500px;
+  padding: 50px 50px 50px 50px;
+  margin: 10px 0 10px 0;
+
+  border-radius: 25px;
+  border: 0px solid white;
+
+  background-color: rgb(233, 255, 255);
+
+  .titulo {
+    margin-bottom: 20px;
+
+    > p {
+      margin-top: 10px;
+    }
+  }
+
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    .fondoGris {
+      margin:10px 0 10px 0;
+      background-color: rgb(233, 233, 233);
+      padding: 12px 3px 12px 3px;
+      border-radius: 5px;
+    }
+
+    .reiniciar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      input[type="reset"] {
+        width: 100%;
+        padding: 12px 32px;
+        background-color: rgb(70, 70, 200);
+        color: white;
+        border-radius: 25px;
+        border: 0px;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+label {
+  font-weight: 500px;
+  width: 500px;
+}
+
+input[type="text"],
+select {
+  width: 500px;
+  height: 35px;
+  background-color: aliceblue;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  margin: 5px 0 20px 0px;
+}
