@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* VARIABLES */
+
+:root {
+  --colorPrincipal: #fff7f7;
+  --colorSecundario: #0b072d;
+  --colorTer:  #faf1f1;
+  --amarilloPrimario: #ffb300;
+  --amarilloSecundario: #ffb700; 
+  --amarilloFondo: #fdf4ac5a;;
+  --verde : #25d0b4;
+}
+
+/* ESTILO GENERALES */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+     background-color: black;
+}
+
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORMULARIO */
+
+form{
+    margin-top: 20px;
+    width: 70%;
+    background-color: var(--colorPrincipal);
+    display: flex;
+    flex-direction: column;
+
+    /* ENCABEZADO DEL FORMULARIO */
+    >header{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 24px 12px;
+        gap:5px;
+
+        background-color: var(--colorSecundario);
+        color: var(--colorPrincipal);
+
+        >section{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap:10px;
+            margin: 0 10px 0 10px;
+        }
+    }
+
+    /* DATOS */
+
+    >fieldset{
+        margin: 10px 20px;
+        padding: 10px 12px;
+        background-color: var(--colorTer);
+        border: 0;
+        border-left: 4px solid var(--verde);
+
+
+
+        >section{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+    
+            >div{
+                width: 50%;
+            }
+
+            >.servicio{ 
+                transform: translateY(3px);    
+
+                > div{
+                    width: 94%;    
+                    background-color: white;
+                    padding: 7px 2px 9px 2px;
+                    border: 1px solid grey;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    gap:10px;
+                    
+                    label {
+                        display:  contents;
+                    }
+                }
+            }
+        
+        }
+
+        >article{
+            width: 100%;
+            display: block;
+        }
+
+        .color{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            margin: 5px 0 5px 0;
+        }
+
+    }
+
+    >fieldset:first-of-type{
+        background-color: var(--amarilloFondo);
+        color: var(--amarilloSecundario);
+        border-color: var(--amarilloPrimario);
+        span{
+            color: var(--amarilloPrimario);
+            font-weight: bold;
+        }
+    }
+
+    >fieldset:last-of-type{
+        border-left: 0 ;
+        
+        >section{
+           display: flex;
+           gap:5px;
+            
+           label{
+                width: 95%;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    /* BOTONES */
+
+    >section{
+        width: 95%;
+        text-align: right;
+        >input{
+            padding: 16px;
+        }
+        >input:last-of-type{
+            background-color: var(--verde);
+            color: var(--colorTer);
+        }
+    }
+
+
+    /* FOOTER */
+
+    >footer{
+        background-color:var(--colorSecundario);
+        color: #faf1f1;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 30px;
+        
+        span{
+            color: var(--verde);
+        }
+    }
+
+    legend{
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    /* CAMPOS */
+
+    label{
+        width: 100%;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select, option{
+        width: 95%;
+        margin: 3px 0 5px 0;
+        padding: 9px 2px;
+    }
+
+    input[type="url"],
+    input[type="datetime-local"]{
+        width: 97%;
+        margin: 3px 0 5px 0;
+        padding: 9px 2px;
+    }
+
+    select{
+        padding: 11px 2px 11px 2px;
+    }
+
+    textarea{
+        margin: 5px 0 0 0;
+        height: 54px;
+        width: 97%;
+    }
+
+}
+
+.redondeado > p {
+    padding: 4px 6px;
+    background-color: var(--colorSecundario);
+    color:var(--verde);
+    border: 1px solid var(--verde);
+    border-radius: 25px;
+    font-size: 0.8em;
+}
+
+.recuadro >p {
+    background-color: var(--verde);
+    padding: 12px 12px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}

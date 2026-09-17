@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="name" content="Cristina">
+    <meta name="keywords" content="Examen,Cristina">
+    <meta name="description" content="Examen Cristina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo/estilo.css">
+
+    <title>Desarrollos MANILVA WEB</title>
+</head>
+
+<body>
+    <!-- FORMULARIO-->
+    <main>
+        <form action="#" method="get">
+
+            <!--ENCABEZADO-->
+            <header>
+                <section>
+                    <div class="recuadro">
+                        <p>&lt/&gt</p>
+                    </div>
+                    <div>
+                        <h1>DESARROLLOS MANILVA WEB MENOS 30</h1>
+                        <p>Registro de desarrollo y produccion web</p>
+                    </div>
+                </section>
+                <section class="redondeado">
+                    <p>FORMULARIO WEB</p>
+                </section>
+            </header>
+
+            <fieldset>
+                <p><span>Informacion del proyecto:</span> completa los datos del diseñador y las caracteristicas
+                    tecnicas de la pagina web antes de realizar su publicación.</p>
+            </fieldset>
+
+            <!-- NOMBRE + APELLIDOS+ COD.EMPL + @ + TELEFONO -->
+            <fieldset>
+                <legend>01. Datos del diseñador</legend>
+                <section>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre del Diseñador" maxlength="50"
+                            required autofocus>
+                    </div>
+
+                    <div>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos del Diseñador"
+                            maxlength="50" required>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <label for="codEmpleado">Código de empleado</label>
+                        <input type="text" name="codEmpleado" id="codEmpleado" placeholder="Diseñadores 1300-1400"
+                        pattern="^13[0-9]{2}$|^1400$" 
+                        title="Debe de estar entre 1300 y 1400"
+                        required>
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.es"
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="955 44 23 75"
+                            pattern="^[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}$" required>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </section>
+            </fieldset>
+
+            <!-- URL + F.PUBLICACION + SERVIDOR APP + TIEMPO DESARROLLO + LENGUAJE COD. + FEC HORA SUB PRODUCCION + BACKGROUND DE LA WEB + DOCUMENTO DE LA WEB -->
+            <fieldset>
+                <legend>02. DATOS DEL DISEÑO</legend>
+
+                <article class="campCompleto">
+                    <label for="url">Url</label>
+                    <input type="url" name="url" id="url" placeholder="URL de la página web"
+                        pattern="^http:\/\/www\.[a-zA-Z0-9\-]+\.[a-z]{2,}(\/.*)?$" 
+                        title="La URL debe empezar por http://www.">
+                </article>
+
+                <section>
+                    <div>
+                        <label for="fechPublicacion">Fecha de Publicación</label>
+                        <input type="date" name="fechPublicacion" id="fechPublicacion">
+                    </div>
+
+                    <div class="servicio">
+                        <label for="servApp">Servicio de aplicaciones</label>
+                        <div>
+                            <div>
+                                <input type="radio" name="servApp" id="Apache" value="Apache">
+                                <label for="Apache">Apache</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="servApp" id="webSphere" value="webSphere">
+                                <label for="webSphere">WebSphere</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div>
+                        <label for="tDesarrollo">Tiempo de desarrollo</label>
+                        <input type="time" name="tDesarrollo" id="tDesarrollo">
+                    </div>
+
+                    <div>
+                        <label for="provincia">Lenguaje de codificación:</label>
+
+                        <select name="provincia" id="provincia">
+                            <option value="HTML5">HTML5</option>
+                            <option value="CCS3">CCS3</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python" selected>Python</option>
+                        </select>
+                    </div>
+                </section>
+
+                <article class="campCompleto">
+                    <label for="subProduccion">Fecha y hora de subida a produccion</label>
+                    <input type="datetime-local" name="subProduccion" id="subProduccion">
+                </article>
+
+                <label for="background">Background de la web</label>
+                <article class="campCompleto color">
+                    <input type="color" name="background" id="background" 
+                    placeholder="Seleccione el color de fondo"
+                    value="#8ee41b">
+                    <p>Selecciona el color del fondo</p>
+                </article>
+
+                <article class="campCompleto">
+                    <label for="doc">Documentacion de la web</label>
+                    <textarea name="doc" id="doc"
+                    placeholder="Introduce aqui la documentacion del proyecto, caracteristicas, técnicas, observaciones..."></textarea>
+                </article>
+            </fieldset>
+
+            <fieldset>
+                <section>
+                    <input type="checkbox" name="recInf" id="recInf" 
+                    value="recInf" checked>
+                    <label for="recInf">Deseo recibir información sobre el proceso de publicación web</label>
+                </section>
+
+                <section>
+                    <input type="checkbox" name="cond" id="cond" value="cond">
+                    <label for="cond">Declaro haber leido y acepto las condiciones generales de la empresa y la
+                        normativa de protección de datos</label>
+                </section>
+            </fieldset>
+
+            <section>
+                <input type="reset" value="Borrar Formulario">
+                <input type="submit" value="Enviar Formulario">
+            </section>
+
+
+            <!-- PIE DE FORMULARIO -->
+            <footer>
+                <section>
+                    <p> <span>Manilva Web menos 30</span> Desarrollo y publicacion</p>
+                </section>
+
+                <section>
+                    <p>Formato de proyecto web</p>
+                </section>
+            </footer>
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>
